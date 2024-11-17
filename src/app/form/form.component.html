@@ -1,0 +1,29 @@
+<div style="width: 100vw;" class="sen">
+    
+<div class="outer-container">
+    <form #myForm="ngForm"  (ngSubmit)="onSubmit(myForm)" style="width: 30vw;">
+        <h1>
+            Ngrx Form Validation
+        </h1>
+        <input placeholder="Enter Your Name" ngModel required name="name" class="input" />
+        <br/>
+        <input placeholder="Enter Your Mail" ngModel required name="mail" class="input" />
+        <br/>
+        <div class="radio-container">
+            <input type="radio" class="radio" for="male" name="gender" value="male" ngModel /><label id="male">Male</label>
+            <br/>
+            <input type="radio" class="radio" for="female" name="gender" value="female" ngModel /><label id="female">Female</label>
+        </div>
+
+        <br/>
+        <div class="btn-div">
+            <button type="submit" class="btn" >
+                Submit
+            </button>
+        </div>
+    
+    </form>
+ 
+  
+</div>
+</div>
